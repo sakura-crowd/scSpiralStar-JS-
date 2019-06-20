@@ -14,7 +14,7 @@ div のサイズに応じてアニメーションが描画されます。
 <div id="scSpiralStarView1" style="width:auto; height:320px;"></div>
 <div id="scSpiralStarView2" style="width:auto; height:180px;"></div>
 ```
-1. jQuery と pixiJS を読み込みます。  
+2. jQuery と pixiJS を読み込みます。  
 ```html
 <script
 	src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -22,12 +22,13 @@ div のサイズに応じてアニメーションが描画されます。
 	crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.0.3/pixi.min.js"></script>
 ```
-1. ローカルに保存した scSpiralStar.js を読み込みます。以下の例では js フォルダに置かれています。  
+
+3. ローカルに保存した scSpiralStar.js を読み込みます。以下の例では js フォルダに置かれています。  
 https://github.com/sakura-crowd/scSpiralStar-JS-/blob/master/js/scSpiralStar.js から取得してご利用下さい。
 ```html
 <script src="./js/scSpiralStar.js"></script>
 ```
-1. scSpiralStar.setup 関数を、 div タグの ID やパラメータを指定して、呼び出します。  
+4. scSpiralStar.setup 関数を、 div タグの ID やパラメータを指定して、呼び出します。  
 例えば 2 つの div に個別に表示したい場合は、 ID などを変えて setup 関数を 2 回呼び出してください。  
 ```javascript
 <script type="text/javascript">
