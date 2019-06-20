@@ -7,8 +7,8 @@
 ![Example](readme/scSpiralStarExample.gif "Example")
 
 # 使い方
-ウェブページのもととなる html の body タグ内に以下の項目を設定します。  
-1. 表示対象の div タグを作る。div には ID とサイズを設定してください。  
+ウェブページのもととなる HTML ファイルの body タグ内に以下の項目を設定します。  
+1. 表示対象の div タグを作ります。 ID とサイズを設定してください。  
 div のサイズに応じてアニメーションが描画されます。
 ```html
 <div id="scSpiralStarView1" style="width:auto; height:320px;"></div>
@@ -36,9 +36,8 @@ https://github.com/sakura-crowd/scSpiralStar-JS-/blob/master/js/scSpiralStar.js 
 </script>
 ```
 具体的には scSpiralStar.html を参考にしてください。  
-
-# 制限事項
-* グローバル空間に scSpiralStar を定義します。
+  
+試してみたいだけならば、まるごとプロジェクトをダウンロードして scSpiralStar.html をウェブブラウザで表示してください。
 
 # パラメータ
 scSpiralStar.setup 関数の第 2 引数で、以下のパラメータを上書きすることができます。  
@@ -98,6 +97,13 @@ scSpiralStar.setup 関数の第 2 引数で、以下のパラメータを上書�
 * backgroundColor  
 描画範囲の背景色です。  
 既定値は 0x191970 です。
+
+# 制限事項
+* グローバル空間に scSpiralStar を定義します。
+
+# 動作確認環境
+* windows 10 Home 64bit
+	* Google Chrome
 
 # ライセンスについて
 license.txt を参照してください。
