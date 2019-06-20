@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="ja">
+	<meta charset="utf-8">
+	<title>scSpiralSta Example</title>
+</head>
+<body>
+	<!-- 描画対象の div を ID とサイズを指定して作成します。 -->
+	div1<br>
+	<div id="scSpiralStarView1" style="width:auto; height:320px;"></div>
+	<hr>
+	div2<br>
+	<div id="scSpiralStarView2" style="width:auto; height:180px;"></div>
+
+	<!-- jQuery を読み込みます。 -->
+	 <script
+		src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+		crossorigin="anonymous"></script>
+	<!-- pixiJS を読み込みます。 -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.0.3/pixi.min.js"></script>
+	<!-- scSpiralStar.js を読み込みます。
+		https://github.com/sakura-crowd/scSpiralStar-JS-/blob/master/js/scSpiralStar.js から取得してご利用下さい。-->
+	<script src="./js/scSpiralStar.js"></script>
+
+	<!-- setup 関数を呼び出して指定した ID の div にアニメーション・イベント処理を開始します。
+		第二引数ではパラメータを上書きできます。-->
+	<script type="text/javascript">
+		scSpiralStar.setup("scSpiralStarView1", {cntStarMin: 6, cntStarMax:12});
+		scSpiralStar.setup("scSpiralStarView2", {cntStarMin: 2, cntStarMax: 3, backgroundColor:0x7cfc00, ballColorList:[0x00bfff, 0xda70d6]});
+	</script>
+</body>
+</html>
