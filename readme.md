@@ -101,6 +101,8 @@ scSpiralStar.setup 関数の第 2 引数で、以下のパラメータを上書�
 
 # 制限事項
 * グローバル空間に scSpiralStar を定義します。
+* PixiJS が動作する環境が必要です。
+* jQuery が動作する環境が必要です。
 
 # 動作確認環境
 * windows 10 Home 64bit
